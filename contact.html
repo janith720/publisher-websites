@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Brightline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script
+      src="./ad-studio-sdk/dist/adstudio-sdk.umd.js"
+      data-position="bottom-left"
+      data-bubble-size="60"
+      data-bridge-url="https://staging.adstudio.cloud/bridge/adid-bridge.html"
+      data-base-url="https://staging.adstudio.cloud"
+      data-bucket-url="http://127.0.0.1:5500"
+      data-init-delay="5000"
+      data-session-timeout-minutes="1"
+      data-popup-auto-close="15000"
+    ></script>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Brightline</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>We'd love to hear about your project.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <form onsubmit="event.preventDefault(); this.reset(); alert('Thanks! We\'ll be in touch soon.');">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button class="btn" type="submit">Send message</button>
+      </form>
+      <p style="margin-top: 32px;">Or email us at <a href="mailto:hello@brightline.example">hello@brightline.example</a></p>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Brightline. All rights reserved.</div>
+  </footer>
+</body>
+</html>
